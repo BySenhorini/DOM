@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 2.</title>
+  <style>
+    body
+    body.light {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    body.dark {
+      background: #121212;
+      color: #ffffff;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="light">
+  <h1>Modo Claro/Escuro</h1>
+  <p>Clique no botão para alternar o tema.</p>
+  <button onclick="toggleTheme()">Alternar Tema</button>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      body.classList.toggle('dark');
+      body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>
